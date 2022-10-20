@@ -1,0 +1,125 @@
+@use "../../../../styles/varibales" as v;
+
+.app-recipe {
+  &__item {
+    position: relative;
+    height: 180px;
+    background: linear-gradient(to bottom, #e9f1fa, white);
+    border-radius: 0.8em;
+    box-shadow: 0.1em 0.4em 0.8em #dfdfdf;
+    display: flex;
+    align-items: flex-end;
+    &-header {
+      position: absolute;
+      width: 100%;
+      top: -2.5em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &-image {
+      width: 125px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    &-title {
+      margin: 0;
+      padding: 0;
+      margin-top: 0.1em;
+      font-weight: 500;
+      color: v.$primary;
+      & span:last-child {
+        font-family: "MonsterClubhouse";
+        margin: 0.1em;
+      }
+    }
+    &-footer {
+      padding: 0.5em 0.8em;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      & img {
+        width: 1.1em;
+      }
+      font-size: 1.1em;
+    }
+    &-rating {
+      display: flex;
+      align-items: center;
+      & span {
+        margin: 0;
+        padding: 0;
+        color: v.$secondary;
+        display: block;
+        margin: 0 0.5em;
+      }
+    }
+    &-details {
+      display: none;
+      color: v.$secondary;
+      height: 100%;
+      width: 100%;
+      &-title,
+      &-description {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      &-title {
+        color: v.$primary;
+        font-family: "MonsterClubhouse";
+        font-size: 1em;
+        font-weight: 400;
+      }
+      &-item {
+        margin-bottom: 0.3em;
+      }
+    }
+    &:hover {
+      align-items: center;
+      height: 325px;
+      padding-bottom: 1em;
+      .app-recipe__item-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        &-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .app-recipe__item-title,
+      .app-recipe__item-footer {
+        display: none !important;
+      }
+    }
+    @media (min-width: 768px) {
+      height: 250px;
+      &-image {
+        width: 160px;
+      }
+      &-title {
+        font-size: 1.5em;
+      }
+      &-footer {
+        font-size: 1.5em;
+      }
+    }
+    @media (min-width: 1200px) {
+      height: 250px;
+      &-header {
+        top: -3em;
+      }
+      &-image {
+        width: 180px;
+      }
+      &-footer {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

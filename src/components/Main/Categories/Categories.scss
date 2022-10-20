@@ -1,0 +1,34 @@
+.app-categories {
+  &__wrapper {
+    max-width: 350px;
+    margin: auto;
+  }
+  &__content {
+    position: relative;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+  }
+  &__items {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    top: -40px;
+    grid-template-columns: repeat(3, 31%);
+    grid-gap: 0.8em;
+  }
+  @media (min-width: 428px) and (max-width: 1200px) {
+    &__wrapper {
+      max-width: 700px;
+    }
+    &__content {
+      height: 70px;
+    }
+    &__items {
+      grid-template-columns: repeat(6, 15%);
+    }
+  }
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}

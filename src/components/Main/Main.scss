@@ -1,0 +1,45 @@
+.app-main__wrapper {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.app-main__hero {
+  background-image: url("../../../public/images/bcq.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 240px;
+  & .app-main__content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    max-width: 350px;
+    margin: auto;
+    & .app-main__title h2 {
+      margin: 0;
+      padding: 0;
+      color: white;
+      line-height: 0.7;
+      font-size: 3.2em;
+      & span:first-child {
+        font-weight: 300;
+      }
+      & span:last-child {
+        display: block;
+        font-family: "MonsterClubhouse";
+        font-weight: 200;
+        font-size: 0.9em;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    height: 416px;
+    & .app-main__content {
+      max-width: 750px;
+      & .app-main__title h2 {
+        font-size: 4.4em;
+      }
+    }
+  }
+}

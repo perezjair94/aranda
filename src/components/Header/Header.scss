@@ -1,0 +1,47 @@
+@use "../../styles/varibales" as v;
+
+.app-header__wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+.app-header__content {
+  padding: 0.3em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & h1 {
+    padding: 0;
+    margin: 0;
+    color: "red";
+    font-weight: 400;
+    color: v.$secondary;
+    & span:first-child {
+      font-family: "MonsterClubhouse";
+    }
+    & span:last-child {
+      color: v.$primary;
+    }
+  }
+  & .app-header__menu {
+    & a {
+      margin-left: 2.5em;
+      font-weight: 400;
+      font-size: 0.9em;
+      color: v.$secondary;
+      cursor: pointer;
+      &:hover {
+        color: v.$primary;
+      }
+    }
+    @media (max-width: 1200px) {
+      & .app-header__items {
+        display: none;
+      }
+    }
+    @media (min-width: 1200px) {
+      & .app-header__icon {
+        display: none;
+      }
+    }
+  }
+}

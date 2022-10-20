@@ -1,0 +1,22 @@
+@use "../../../../styles/varibales" as v;
+
+.app-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #e9f1fa, white);
+  border-radius: 0.8em;
+  box-shadow: 0.1em 0.4em 0.8em #dfdfdf;
+  padding: 0.8em;
+  &__image {
+    height: 30px;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    color: v.$secondary;
+    font-weight: 600;
+    margin-top: 0.5em;
+  }
+}

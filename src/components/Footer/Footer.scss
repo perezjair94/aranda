@@ -1,0 +1,62 @@
+.app-footer {
+  background: linear-gradient(180deg, #c2e3f3, #6aa3c1);
+  margin-top: 2.5em;
+  &__wrapper {
+    max-width: 400px;
+    margin: auto;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    height: 67px;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    & h2 {
+      margin: 0;
+      padding: 0;
+      font-size: 1.6em;
+      font-family: "MonsterClubhouse";
+      font-weight: 500;
+      color: #425966;
+    }
+  }
+  &__image img {
+    width: 210px;
+    position: absolute;
+    top: -40px;
+  }
+  @media (min-width: 450px) {
+    &__wrapper {
+      max-width: 600px;
+      margin: auto;
+    }
+    &__content {
+      height: 86px;
+    }
+    &__title h2 {
+      font-size: 2.5em;
+    }
+    &__image img {
+      width: 280px;
+    }
+  }
+  @media (min-width: 770px) {
+    &__wrapper {
+      max-width: 800px;
+      margin: auto;
+    }
+    &__content {
+      height: 145px;
+    }
+    &__title h2 {
+      font-size: 2.5em;
+    }
+    &__image img {
+      width: 450px;
+      top: -60px;
+    }
+  }
+}

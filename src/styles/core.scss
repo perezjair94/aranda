@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "MonsterClubhouse";
+  src: local("MonsterClubhouse"),
+    url("../assets/fonts/MonsterClubhouse.ttf") format("truetype");
+  font-weight: normal;
+}
+
+.font-monster {
+  font-family: "MonsterClubhouse";
+}
